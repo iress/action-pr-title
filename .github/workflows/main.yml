@@ -9,7 +9,8 @@ jobs:
     # Job name is Greeting
     name: Check
     # This job runs on Linux
-    runs-on: 'ubuntu-latest'
+    runs-on:
+      group: uk-managedco-actions-runners
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
